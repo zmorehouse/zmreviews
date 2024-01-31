@@ -1,0 +1,138 @@
+/* Styling for our Image Gallery page */
+/* Note that these stylings are often manipulated by /js/imagegallery.js */
+
+.gallery {
+    margin: 0 auto;
+    margin-top:40px;
+}
+/* Display our images in a responsive grid */ 
+.photogrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.filmshot {
+    position: relative;
+}
+
+.filmshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Create an overlay on hover to make text legible*/
+.filmshot:hover img {
+    filter: brightness(50%);
+}
+
+.filmshot:hover img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Place the title in the center */
+.filmshot .movietitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.filmshot:hover .movietitle {
+    opacity: 1;
+}
+
+/* These items are intentionally hidden from the page, as they only reveals when in 'expanded view'. When they are revealed, they are positioned accordingly to the below CSS. */
+.caption {
+    display: none;
+}
+
+.expanded {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    overflow: hidden;
+    text-align: center;
+}
+
+.expanded .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.expanded .expanded-img {
+    max-height: 80%;
+    max-width: 80%;
+    margin:0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.expanded .expanded-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.expanded .expanded-caption {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'BodoniBook';
+}
+
+.expanded .expanded-title {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'BodoniBold';
+}
+
+.previousarrow,
+.nextarrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #fff;
+    font-size: 30px;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+.previousarrow {
+    left: 20px;
+}
+
+.nextarrow {
+    right: 20px;
+}

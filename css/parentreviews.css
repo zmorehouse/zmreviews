@@ -1,0 +1,28 @@
+.reviewblock {
+    display:flex;
+}
+
+#columnleft {
+    width:60%;
+    margin-right:100px;
+}
+
+#columnleft h4 {
+    font-size:50px; 
+    font-family:BodoniBold; 
+    margin:0px;
+}
+
+#columnright {
+    width:40%;
+    display:flex; 
+    align-items:center;
+}
+
+img {
+    width:100%;
+}
+
+h3 {
+    margin:0px;
+}

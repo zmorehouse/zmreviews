@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zac Morehouse | Favourite Film Shots</title>
+
+    <!-- Relevant Stylesheets -->
+    <link rel="stylesheet" href="css/imagegallery.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Relevant Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/imagegallery.js"></script>
+    <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header section, as per /js/script.js -->
+    <div id="globalheader"></div>
+
+    <!-- Content header / title section -->
+    <div class="pageheader">
+        <div>
+            <h1>Favourite Film Shots</h1>
+            <h2>A gallery featuring some of my favourite shots in film.</h2>
+        </div>
+    </div>
+
+    <!-- Page content section-->
+    <div class="pagecontent">
+        <p> This page pays homage to some of my all-time favourite shots in film. Unsuprisingly, a number of these
+            happen to be from some of my favourites as outlined on the homepage. <br> <br> Click through the gallery to
+            learn more about each shot!</p>
+        <!-- Image Gallery
+        Functionality controlled by some custom Javascript and CSS, found over at /js/imagegallery.js and /css/imagegallery.css -->
+        <div class="gallery">
+            <!-- First we create a grid featuring all our photos, titles and captions, displaying it on the page -->
+            <div class="photogrid">
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot1.png" alt="A shot from the movie Whiplash">
+                    <div class="movietitle"> Whiplash, 2014 </div>
+                    <div class="caption">Fletcher screams at his to-be protégé.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot2.png" alt="A shot from the movie My Neighbor Totoro">
+                    <div class="movietitle"> My Neighbour Totoro, 1988</div>
+                    <div class="caption">Totoro and Mei wait for a bus in the rain. </div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot3.png" alt="A shot from the movie Fantastic Mr Fox">
+                    <div class="movietitle"> Fantastic Mr Fox, 2010</div>
+                    <div class="caption">Mr Fox admires his new home.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot4.png" alt="A shot from the movie Aftersun">
+                    <div class="movietitle"> Aftersun, 2022</div>
+                    <div class="caption">Sophie and her father Callum watch the sun-set over the beach.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot5.png"
+                        alt="A shot from the movie Into The Spiderverse">
+                    <div class="movietitle">Into The Spiderverse, 2018</div>
+                    <div class="caption">Miles takes a leap of faith.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot6.png" alt="A shot from the movie Inception">
+                    <div class="movietitle">Inception, 2010</div>
+                    <div class="caption">Cobb's totem begins to topple, before the movie cuts.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot7.png"
+                        alt="A shot from the movie The Grand Budapest Hotel">
+                    <div class="movietitle">The Grand Budapest Hotel, 2014</div>
+                    <div class="caption">A young Zero and Agatha meet in Mendels van.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot8.png" alt="A shot from the movie Last Night in Soho">
+                    <div class="movietitle">Last Night In Soho, 2021</div>
+                    <div class="caption">Eloise / Sandy walk into the Café de Paris for the first time.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot9.png" alt="A shot from the movie Babylon">
+                    <div class="movietitle">Babylon, 2023</div>
+                    <div class="caption">Nellie LaRoy parties into stardom.</div>
+                </div>
+                <div class="filmshot">
+                    <img src="images/imagegallery/iconicfilmshot10.png" alt="A shot from the movie Interstellar">
+                    <div class="movietitle">Interstellar, 2014</div>
+                    <div class="caption">Cooper sets foot on Mann's Planet for the first time</div>
+                </div>
+            </div>
+            <!-- Then we create elements that will show when the image is clicked on. Again, this is controlled by the relevant CSS and JS files - click into there (notably the js file) for a full breakdown of how it works  including relevant comments and information. -->
+            <div class="expanded">
+                <span class="close"><i class="fa-solid fa-x fa-xs" style="color: #ffffff;"></i></span>
+                <img class="expanded-img" src="">
+                <div class="expanded-content">
+                    <div class="expanded-caption"></div>
+                    <div class="expanded-title"></div>
+                </div>
+                <div class="previousarrow"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></div>
+                <div class="nextarrow"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer section, as per /js/script.js -->
+        <div id="globalfooter"></div>
+</body>
+
+</html>

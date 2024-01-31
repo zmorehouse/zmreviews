@@ -1,0 +1,28 @@
+/* Sitemap page styling */
+
+td, th {
+    padding:10px;
+    color: black;
+}
+
+b {
+    font-family: 'Montserrat';
+}
+
+#sourcelog {
+    width:100%;
+    border-style: none;
+    overflow-x: auto;
+    background-color:#EFEFEF;
+}
+
+th {
+    color:black;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: white;
+    color: black !important;
+}
+

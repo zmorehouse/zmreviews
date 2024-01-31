@@ -1,0 +1,369 @@
+/* Landing Section Styling */
+.landingsection {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 7.5%;
+  background-color:black;
+  background-image:url('../images/staircasecropped.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right, right ;
+}
+
+#quotemarks {
+  width:7.5%; 
+  padding-left:5px;
+}
+
+.landingsection #columnone {
+  width: 40%;
+  background-color:white;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:7.5%;
+    padding-bottom:7.5%;
+}
+
+.landingsection #columntwo {
+  width: 60%;
+}
+
+.landingsection h1 {
+  color:black;
+  margin-top:15px;
+  margin-bottom:0px;
+}
+
+.landingsection h2 {
+  color:black;
+  margin:0px;
+  font-size:18px;
+  margin-right:25px;
+  text-align:left;
+  font-family:'Montserrat';
+  font-weight:400;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-style:italic;
+}
+
+/* About Me Section Styling */
+.aboutmesection {
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  background-color:#EFEFEF;
+  display: flex;
+  align-items: center
+}
+
+.aboutmesection p {
+  padding-top:25px;
+  margin-top:10px; margin-bottom:10px
+}
+
+.aboutmesection h2 {
+  font-size:72px;
+}
+
+.aboutmesection img {
+  width: 85%;
+  filter: drop-shadow(25px 25px 0px white) grayscale(1);
+  transition: ease-in;
+  transition-duration: 100ms;
+}
+
+.aboutmesection img:hover {
+  filter: drop-shadow(0 0 0px white) grayscale(0);
+  transition: ease-in;
+  transition-duration: 100ms;
+}
+.aboutmesection h2 {
+  margin:0px;
+}
+
+.aboutmesection #columnone {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  padding-right:150px;
+}
+
+.aboutmesection #columntwo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Favourites Section Styling */ 
+.favssection {
+  background-color: black;
+  padding-top:5%;
+  padding-bottom:8%;
+  width:100%;
+}
+
+.favssection h2 {
+  display:flex;
+  justify-content: center;
+  color:white;
+}
+
+.favssection #bold {
+  font-family:'BodoniBold';
+  padding-left:15px;
+  padding-right:15px;
+  font-weight:500;
+}
+
+#moviecolumn {
+  width:15%;
+  transition:ease-out;
+  transition-duration:200ms;
+}
+
+#moviecolumn:hover {
+  scale:1.15;
+  transition:ease-out;
+  transition-duration:200ms;
+}
+
+#movies {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+#moviecover {
+  width:100%;
+}
+
+
+#movies h3 {
+  color:white;
+  font-family:'BodoniBook';
+  font-weight:100;
+  font-size:40px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin:0px;
+  margin-top:10px;
+}
+
+#movies p {
+  color:white;
+  font-family:'Montserrat';
+  font-weight:200;
+  font-size:18px;
+  margin:0px;
+}
+
+#moviecolumn #smaller{
+  font-size:28px;
+}
+
+/* Recently Reviewed Section Styling */
+.reviewedsection {
+  background-color: white;
+  padding-top:7.5%;
+  padding-bottom:7.5%;
+  padding-left:7.5%;
+  padding-right:7.5%;
+}
+
+.reviewedsection h2 {
+  font-family:'BodoniBold'; 
+  font-size:76;
+}
+
+#reviewblock {
+  display:flex;
+  align-items:flex-start;
+}
+
+#reviewbutton {
+  margin-right:25px !important;
+}
+
+.reviewedsection #titlediv {
+  width:70%;
+}
+
+.reviewedsection #flexdiv {
+  display:flex;
+}
+
+.reviewedsection #buttondiv {
+  width:30%; 
+  display:flex; 
+  align-items: center; 
+  justify-content: right;
+}
+
+#review {
+  width:33%;
+  border-style:solid;
+  border-width: 1px; 
+  border-top:1px;
+  border-bottom:1px;
+  border-right:1px;
+  padding:35px;
+}
+
+#review h3 {
+  font-family:'BodoniBook';
+  font-weight:100;
+  font-size: 30px;
+  text-align:justify;
+  margin:0px;
+}
+
+#review h4 {
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  font-size: 36px;
+  margin:0px;
+  font-weight:400;
+}
+
+#reviewdate {
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  color:#ADADAD;
+  font-size:18px;
+  margin:0px;
+  font-weight:600;
+  padding-bottom:10px;
+  padding-top:35px;
+}
+
+#reviewblock a {
+  text-decoration:none;
+}
+
+#readmore {
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  font-size:18px;
+  margin-top:10px;
+  transition: ease-out;
+  transition-duration: 200ms;
+}
+
+#readmore:hover {
+  font-weight:200;
+  letter-spacing: 5px;
+  transition: ease-out;
+  transition-duration: 200ms;
+}
+
+.innerreview {
+  display:flex;
+  align-items: center;
+}
+
+.innerreview #columnone {
+  display:flex;
+  width:50%;
+  align-items: center;
+}
+
+.innerreview #columntwo {
+  display:flex;
+  width:50%;
+  align-items: center;
+}
+
+/* Call to Action Styling */
+.calltoaction {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  background-color:#EFEFEF;
+
+}
+
+.calltoaction h2 {
+  font-size:82px;
+  margin:0px !important;
+  display:flex;
+  justify-content:center;
+}
+
+.calltoaction h3 {
+  font-family:'Montserrat';
+  font-size:25px;
+  font-weight:400;
+  display:flex;
+  justify-content:center;
+}
+
+form {
+  display:flex;
+  justify-content: center;
+}
+
+input {
+  width:85%;
+  padding:25px;
+  font-size:18px;
+  font-family:'Montserrat';
+  border-style:none;
+  margin:10px;
+}
+
+div#formfield1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+div#formfield2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+div#formfield3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+
+}
+
+div#submitbutton {
+  width:20%;
+}
+
+input[type="submit"] {
+  border: solid;
+  border-color:black;
+  border-width:2px;
+  padding: 20px;
+  margin-bottom:50px;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  transition-duration: 100ms;
+  transition: ease-in;
+  filter: drop-shadow(-10px 10px 0px #000);
+
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+  filter: drop-shadow(0 0 0px black);
+  transition: ease-in;
+  transition-duration: 100ms;
+}

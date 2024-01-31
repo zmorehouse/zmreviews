@@ -1,0 +1,42 @@
+/* Styling for our Inner Review pages */
+/* These are all styled together in order to keep a consistent, blog like style across reviews */
+#reviewheader {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+
+#reviewheader h1 {
+    width:100%;
+    display:flex; 
+    justify-content:center;
+    margin:0px !important;
+}
+
+#reviewheader h3 {
+    margin:0px;
+    margin-top:20px;
+}
+
+#reviewcontent {
+    padding-top:2.5% ;
+    padding-left:25%;
+    padding-right:25%;
+}
+
+#reviewcontent p {
+    font-size:20px;
+    padding-top:15px;
+}
+
+#reviewcontent img {
+    width:100%;
+}
+
+button#reviewbutton {
+    padding: 12.5px 399px;
+}
+
+

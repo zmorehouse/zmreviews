@@ -1,0 +1,27 @@
+/* Sitemap page styling */
+
+.pagecontent {
+    display:flex;
+}
+
+.pagecontent #column {
+    width:33.3%;
+    margin-right:50px;
+}
+
+.pagecontent h3 {
+    margin:0px;
+    margin-bottom:20px;
+    font-size:25px !important;
+    font-family:'Montserrat' !important;
+    text-transform:uppercase;
+}
+
+.pagecontent a {
+    line-height:30px;
+}
+#sitemapbreak {
+margin-top:15px;
+margin-bottom:15px;
+margin-right:50px;
+}

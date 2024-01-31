@@ -1,0 +1,337 @@
+/* General website styling - these are styles that are applied across the board */
+/* Add our website fonts */
+@font-face {
+  font-family: BodoniBold;
+  src: url(/Users/zac/Documents/Uni/COMP ASSIGNMENT/local copy/assignment/fonts);
+}
+
+@font-face {
+  font-family: BodoniBook;
+  src: url(/Users/zac/Documents/Uni/COMP ASSIGNMENT/local copy/assignment/fonts);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/Users/zac/Documents/Uni/COMP ASSIGNMENT/local copy/assignment/fonts);
+}
+
+/* Make anchor links scroll smoothly down the page */
+html {
+	scroll-behavior: smooth;
+}
+
+/* General global styling and website branding */
+body {
+  background-color:black;
+  margin:0px;
+}
+
+b, a, p, td{
+  font-family: 'Montserrat';
+  font-size:18px;
+}
+
+a {
+  color:black;
+  text-decoration:underline;
+}
+
+a:hover {
+  color:blue;
+}
+
+h1 {
+  font-family: 'BodoniBold';
+  font-size: 56px;
+  color:white;
+}
+
+h2 {
+  font-size: 56px;
+  font-family:'BodoniBook';
+  font-weight:100;
+  color:black;
+}
+
+p {
+  font-size:18px;
+  color:black;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 34px;
+  font-family: 'BodoniBook';
+  font-weight:300;
+
+}
+
+button {
+  border: solid;
+  border-color:black;
+  border-width:2px;
+  padding: 12.5px 15px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  transition-duration: 100ms;
+  filter: drop-shadow(-10px 10px 0px #000);
+  margin-left:10px;
+}
+
+hr {
+  margin-top:50px;
+}
+
+/* Button hover, active and focus states for accessibility purposes 
+By changing the dropshadow position and adding a transition, we can create a cool effect on hover */ 
+
+button:hover {
+  background-color: black;
+  color: white;
+  filter: drop-shadow(0 0 0px black);
+  transition: ease-in;
+  transition-duration: 100ms;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+  filter: drop-shadow(0 0 0px black);
+  transition: ease-in;
+  transition-duration: 100ms;
+}
+
+button:focus {
+  background-color: black;
+  color: white;
+  filter: drop-shadow(0 0 0px black);
+  transition: ease-in;
+  transition-duration: 100ms;
+}
+
+
+/* Inner page title sections */
+.pageheader {
+  background-color: #EFEFEF;
+  padding-left:7.5%;
+  padding-right:7.5%;
+  padding-top:5%;
+  padding-bottom:2.5%;
+}
+
+.pageheader h1 {
+  color:black;
+  font-family:'BodoniBook';
+  font-weight:100;
+  margin:0px;
+  margin-bottom: 25px;
+
+}
+
+.pageheader h2 {
+  font-family:'Montserrat';
+  font-size:18px;
+  color:black;
+  margin:0px;
+  font-weight:400;
+}
+
+/* Inner page content sections */
+
+.pagecontent {
+  padding-left:7.5%;
+  padding-right:7.5%;
+  padding-top:5%;
+  padding-bottom:5%;
+  background-color:white;
+}
+
+#underconstruction {
+  padding-top:15%; 
+  padding-bottom:15%;
+}
+
+/* Global section styling, as created in /js/script.js */
+/* Header section */
+.header {
+  display: flex;
+  background-color: black;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.header #columnone {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header #columnone h1 {
+  margin:0px;
+  margin-left:50px;
+}
+
+.header #columntwo {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.header #columnthree {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
+.header .fa-brands {
+  color:white;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.fa-brands:hover {
+  color:#969696;
+}
+
+.fa-solid:hover {
+  color:#969696;
+}
+
+#sitelogo {
+  width:70%;
+}
+
+#navmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: lowercase;
+  margin-right:25px;
+  font-weight: 200;
+  font-size:18px;
+}
+
+#navmenu li {
+  display: inline-block;
+}
+
+#navmenu a {
+  display: block;
+  color: white;
+  margin-left: 10px;
+  margin-right:10px;
+  text-decoration: none;
+}
+
+#navmenu a:hover {
+  color: #969696;
+}
+
+
+/* Footer section*/
+.footer {
+  background-color:black;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left:7.5%;
+  padding-right:7.5%;
+  display:flex;
+  align-items:center;
+  justify-items:center;
+  
+}
+
+.footer h2 {
+  color:white;
+  font-family:'BodoniBold';
+  font-size:72px;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.footer h3 {
+  font-family:'BodoniBook';
+  color:white;
+  font-size:26px;
+  font-weight:400;
+  margin:0px;
+}
+
+.footer #column {
+  width:33%;
+  border-style:solid;
+  border-color:white;
+  border-width:1px;
+  border-right:0px;
+  border-top:0px;
+  border-bottom:0px;
+  padding-left:50px;
+}
+
+#contact .fa-envelope {
+  color:white;
+}
+
+#contact .fa-brands {
+  color:white;
+}
+
+#contact p {
+  color:white;
+  padding-left:15px;
+  margin:5px;
+}
+
+#contactlistitem {
+  display:flex;
+  align-items:center;
+}
+
+ul#contact{
+  padding-left:0px !important;
+}
+
+#contact li {
+  margin:0px;
+}
+
+li::marker {
+  display:none !important;
+}
+
+ul#sitemap {
+  padding-left:0px;
+}
+
+#sitemap li {
+  margin-top:5px;
+}
+
+#sitemap a {
+  color:white;
+}
+
+
+/* Assignment Page */
+
+#assignmentpage h2 {
+
+  font-size:24px;
+}

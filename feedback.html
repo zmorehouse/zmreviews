@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zac Morehouse | Feedback Form</title>
+
+    <!-- Relevant Stylesheets -->
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Relevant Scripts -->
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/bf64e8a004.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!-- Header section, as per /js/script.js -->
+    <div id="globalheader"></div>
+
+    <!-- Content header / title section -->
+    <div class="pageheader"> 
+                <div > <h1>Feedback Form</h1> 
+                <h2>Questions or Enquiries?</h2></div>
+    </div>
+
+    <!-- Page content section-->
+    <div class="pagecontent">
+        <div id="columnone">
+
+            <p>Get in touch via the contact form or through one of my social media accounts.</p>
+
+            <!-- Contact form -->
+            <form id="contactform" action="mailto:zacmorehouselogin@gmail.com">
+                <div id="name">
+                    <label> Your Name </label> <br>
+                    <input type="text" placeholder="Your name is..."> <br> <br>
+                </div>
+                <div id="email">
+                    <label> Your Email Address </label> <br>
+                    <input type="email" placeholder="Your email is..."> <br> <br>
+                </div>
+                <div id="gender">
+                    <label> What is your gender? </label> <br>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="prefernot" name="gender">
+                    <label for="prefernot">Prefer Not To Say</label> <br> <br>
+                </div>
+                <div id="message">
+                    <label> Please fill in your feedback below </label> <br>
+                    <textarea placeholder="Your message is..." rows="10" cols="30"> </textarea> <br>
+                </div>
+                <div id="buttons">
+                    <input id="cfbutton" type="submit" value="Send It!">
+                    <p>or</p>
+                    <input id="cfbutton" type="reset" value="Clear">
+                </div>
+            </form>
+
+        </div>
+        <div id="columntwo">
+
+            <!-- Contact links -->
+            <div id="contactlink">
+                <i class="fa-solid fa-envelope fa-4x " id="contacticon"></i>
+                <a href="mailto:zacmorehouselogin@gmail.com"><h3> zacmorehouselogin@gmail.com </h3></a>
+            </div>
+
+            <div id="contactlink">
+                <i class="fa-brands fa-twitter fa-4x " id="contacticon"></i>
+                <a href="https://twitter.com/zoobzx" target="_blank"><h3> @zoobzx</h3> </a>
+            </div>
+
+            <div id="contactlink">
+                <i class="fa-brands fa-instagram fa-4x"i d="contacticon"></i>
+                <a href="https://instagram.com/z_morehouse" target="_blank"><h3> @z_morehouse</h3> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section, as per /js/script.js -->
+    <div id="globalfooter"></div>
+    </body>
+
+</html>

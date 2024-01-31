@@ -1,0 +1,13 @@
+.pagecontent {
+    display:flex;
+    align-items: center;
+}
+
+#columnone {
+    width: 50%
+}
+
+#columntwo {
+    width:50%;
+    padding-left:15px;
+}

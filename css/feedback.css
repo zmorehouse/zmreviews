@@ -1,0 +1,134 @@
+/* Styling for our Feedback page */
+.pagecontent {
+    display:flex;
+}
+
+.pagecontent #columnone {
+    width:50%;
+}
+
+.pagecontent #columntwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin-left: 100px;
+    padding-left:100px;
+}
+
+/* Contact form styling */
+form {
+    width:100%;
+    border-style:solid;
+    border-color:white;
+    border-radius:5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    font-weight:500;
+    font-size:15px;
+    font-family:'Montserrat';
+}
+
+input[type="text"], input[type="email"] {
+    width:95%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family:'Montserrat';  
+
+}
+
+textarea {
+    margin-top:5px;
+    width:100%;  
+}
+
+#contactform #name {
+    width:40%; 
+    margin-right:30px;
+}
+
+#contactform #email {
+    width:55%;
+}
+
+#contactform #gender {
+    width:100%;
+    display:flex; 
+    align-items: center;
+}
+
+input[type='radio'] {
+    margin-left:15px;
+}
+
+#contactform #message {
+    width:100%; 
+    margin-top:20px;
+}
+
+#contactform #buttons {
+    display:flex; 
+    width: 45%; 
+    justify-content: space-between; 
+    align-items:flex-end;
+}
+
+/* Styling for our contact links */
+#contactlink {
+ display: flex;
+ align-items: center;
+ margin-bottom:50px;
+}
+
+#contactlink h3 {
+    color: black;
+    font-family: 'BodoniBook';
+    font-weight: 100;
+    margin: 0px;
+    font-size:52px;
+    margin-left:25px;
+}
+
+#contacticon {
+    width:100%;
+    text-align:center;
+}
+
+input#cfbutton {
+    border: solid;
+    border-color:black;
+    border-width:2px;
+    padding: 12.5px 25px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    transition-duration: 100ms;
+    filter: drop-shadow(-10px 10px 0px #000);
+    margin-left:10px;
+
+}
+
+input#cfbutton:hover {
+    background-color: black;
+    color: white;
+    filter: drop-shadow(0 0 0px black);
+    transition: ease-in;
+    transition-duration: 100ms;
+}
+
+a {
+    text-decoration: none !important;
+}
